@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Balance - Monitoreo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <i class="fas fa-desktop header-icon"></i>
+            <h1>Screen Balance</h1>
+            <p>Control de tiempo, postura y salud al usar el computador</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="alertas">
+            <h2>
+                <i class="fas fa-exclamation-triangle section-icon"></i>
+                Alertas
+            </h2>
+            <div id="alertas-container">
+                <div class="no-alerts">No hay alertas activas</div>
+            </div>
+        </section>
+
+        <section class="estadisticas">
+            <h2>
+                <i class="fas fa-chart-line section-icon"></i>
+                Estadísticas
+            </h2>
+            <div class="stats-summary">
+                <div class="stat-item">
+                    <span class="stat-number" id="tiempo-actual">0</span>
+                    <div class="stat-label">Minutos hoy</div>
+                </div>
+                <div class="stat-item pulse">
+                    <span class="stat-number" id="sesion-actual">0</span>
+                    <div class="stat-label">Sesión actual</div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="graficoTiempo"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Screen Balance Project - Cuidando tu bienestar digital</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
